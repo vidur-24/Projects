@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            background-color: #aaaaaa;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(111,144,141,0.8), 0 4px 8px 0 rgba(111,144,141,0.8);
+            background-color:#6f908d;
+            color: white;
+        }
+
+        .text{
+            padding: 30px;
+            font-size: 20px;
+        }
+        .form{
+            padding: 20px;
+        }
+
+        .inputs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .unit{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .temp{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #inUnit{
+            margin: 5px;
+            padding: 10px;
+        }
+        #outUnit{
+            margin: 5px;
+            padding: 10px;
+        }
+        #inTemp{
+            margin: 5px;
+            padding: 10px;
+        }
+        #outTemp{
+            margin: 5px;
+            padding: 10px;
+        }
+        button{
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Temperature Convertor</h1>
+        </div>
+        <div class="form">
+            <form>
+                <div class="inputs">
+                    <div class="unit">
+                        <label>From:</label>
+                        <select name="inUnit" id="inUnit">
+                            <option value="c">Celsius</option>
+                            <option value="f">Fahrenheit</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                        <label>To:</label>
+                        <select name="outUnit" id="outUnit">
+                            <option value="f">Fahrenheit</option>
+                            <option value="c">Celsius</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                    </div>
+                    <div class="temp">
+                        <label>Input Temperature:</label> <input type="text" id="inTemp">
+                        <label>Output Temperature:</label> <input type="text" id="outTemp">
+                    </div>
+                </div>
+                <div class="submit">
+                    <button>Convert</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+</body>
+<script src="pro-2.js"></script>
+</html>

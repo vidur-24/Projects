@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body{
+            background-color: #1f1f1f;
+            color: white;
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+            text-align: center;
+        }
+        .boxes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .text{
+            text-align: center;
+            padding: 100px;
+        }
+        .reset{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+        }
+        button{
+            padding: 10px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border: none;
+            border-radius: 5%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Background Color Theme </h1>
+        <p>Click the box, whose color you want to apply to background..</p>
+    </div>
+    <div class="boxes">
+        <div class="box" id="red"></div>
+        <div class="box" id="blue"></div>
+        <div class="box" id="green"></div>
+        <div class="box" id="yellow"></div>
+    </div>
+    <div class="reset">
+        <button class="resetbutton">Reset</button>
+    </div>
+</body>
+<script src="pro-1.js"></script>
+</html>
